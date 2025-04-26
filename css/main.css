@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #F6F5F6;
+}
+
+main {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+}
+main section {
+  width: 305px;
+  display: grid;
+  gap: 32px;
+}
+@media screen and (min-width: 48em) {
+  main section {
+    width: 647px;
+    grid-template-areas: "grid-purple grid-purple" "grid-grey grid-white-short" "grid-dark grid-dark" "grid-white-large grid-white-large";
+  }
+}
+@media screen and (min-width: 64em) {
+  main section {
+    width: -moz-fit-content;
+    width: fit-content;
+    grid-template-areas: "grid-purple grid-purple grid-grey grid-white-large" "grid-white-short grid-dark grid-dark grid-white-large";
+  }
+}
+main section .purple {
+  background-color: #733FC8;
+}
+main section .purple .card_name {
+  color: #FFFFFF;
+}
+main section .purple .card_primaryText {
+  color: #FFFFFF;
+}
+main section .purple .card_graduate {
+  color: #EDE4FF;
+}
+main section .purple .card_secondaryText {
+  color: #EDE4FF;
+}
+@media screen and (min-width: 48em) {
+  main section .purple {
+    grid-area: grid-purple;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section .purple {
+    width: 540px;
+  }
+}
+main section .grey-500 {
+  background-color: #48556A;
+}
+main section .grey-500 .card_name {
+  color: #FFFFFF;
+}
+main section .grey-500 .card_primaryText {
+  color: #FFFFFF;
+}
+main section .grey-500 .card_graduate {
+  color: #E7EAEE;
+}
+main section .grey-500 .card_secondaryText {
+  color: #E7EAEE;
+}
+@media screen and (min-width: 48em) {
+  main section .grey-500 {
+    grid-area: grid-grey;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section .grey-500 {
+    width: 255px;
+  }
+}
+main section .white {
+  background-color: #FFFFFF;
+}
+main section .white .card_name {
+  color: #48556A;
+}
+main section .white .card_primaryText {
+  color: #48556A;
+}
+main section .white .card_graduate {
+  color: #676D7E;
+}
+main section .white .card_secondaryText {
+  color: #676D7E;
+}
+@media screen and (min-width: 48em) {
+  main section .grid-white-short {
+    grid-area: grid-white-short;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section .grid-white-short {
+    width: 255px;
+  }
+}
+main section .dark_blue {
+  background-color: #19202D;
+}
+main section .dark_blue .card_name {
+  color: #FFFFFF;
+}
+main section .dark_blue .card_primaryText {
+  color: #CFCFCF;
+}
+main section .dark_blue .card_graduate {
+  color: #FFFFFF;
+}
+main section .dark_blue .card_secondaryText {
+  color: #E7EAEE;
+}
+@media screen and (min-width: 48em) {
+  main section .dark_blue {
+    grid-area: grid-dark;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section .dark_blue {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 48em) {
+  main section .grid-white-large {
+    grid-area: grid-white-large;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section .grid-white-large {
+    width: 255px;
+  }
+}
+main section .card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+}
+main section .card .card_data {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  align-items: center;
+}
+main section .card .card_data .card_verified {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+main section .card .card_data .card_verified .card_name {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+main section .card .card_data .card_verified .card_graduate {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+main section .card .card_primaryText {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+main section .card .card_secondaryText {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+}/*# sourceMappingURL=main.css.map */
